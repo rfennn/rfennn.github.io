@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  max-width: 1140px;
+}
+
+header {
+  background-color: #F0F8FF;
+}
+
+header h1 {
+  color: #5E86C1;
+  padding: 10px;
+}
+
+header > .container > nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header > .container > nav > ul > li > a {
+  line-height: 60px;
+  text-decoration: none;
+  color: #5E86C1;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
