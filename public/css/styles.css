@@ -1,6 +1,8 @@
-body{
-  font-family:'Times New Roman', Times, serif
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #05192d;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +11,15 @@ body{
 ul, ol {
   list-style-type: none;
 }
-a{
-  text-decoration: none;
-}
 
 .container {
   width: 80%;
   margin: auto;
   max-width: 1140px;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -30,15 +33,25 @@ header h1 {
 
 header > .container > nav > ul {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+}
+
+header > .container > nav > ul > li {
+  width: 25%;
+  text-align: center;
 }
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
+  text-decoration: none;
   color: #b3def9;
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: bold;
+}
+
+header > .container > nav > ul > li:hover {
+  border-bottom: 3px solid #b3def9;
 }
 
 .img-fluid {
@@ -76,15 +89,37 @@ header > .container > nav > ul > li > a {
 .col-6 img {
   background-size: auto;
 }
-div h2{
-  margin: 20px 0;
 
+div > h2 {
+  margin: 20px 0;
+  color: #b3def9;
 }
-.title a{
+
+div > h3 > a {
   display: block;
   margin: 5px 0;
-  color: #05192d;
+  color: #b3def9;
 }
-.description{
-  color: rgb(50, 143, 197);
+
+.container p {
+  color: #ffffff;
+}
+
+footer {
+  background-color: #05192d;
+  padding: 40px 0;
+}
+
+footer dl {
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer dt {
+  color: #b3def9;
+  font-size: 20px;
+  font-weight: bold;
 }

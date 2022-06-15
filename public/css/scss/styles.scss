@@ -1,3 +1,7 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #05192d;
+}
 $primary-color:#b3def9;
 *{
     margin: 0;
@@ -12,6 +16,9 @@ ul,ol{
     margin: auto;
     max-width: 1140px;
 }
+a{
+    text-decoration: none;
+}
 //頁首
 header{
     background-color: #05192d;
@@ -23,7 +30,12 @@ header h1{
 
 header>.container>nav>ul{
 display: flex;
-justify-content: space-around;
+width: 100%;
+// justify-content: space-around;
+}
+header>.container>nav>ul>li{
+    width: 25%;
+    text-align: center;
 }
 header>.container>nav>ul>li>a{
 line-height: 60px;
@@ -33,7 +45,9 @@ font-size: 20px;
 letter-spacing: 2px;
 font-weight: bold;
 }
-
+header>.container>nav>ul>li:hover{
+border-bottom: 3px solid $primary-color;
+}
 //內容
 
 .img-fluid{
@@ -66,7 +80,29 @@ font-weight: bold;
 }
 div>h2{
 margin: 20px 0;
-color: #05192d;
+color: #b3def9;
 }
-
-
+div>h3>a{
+    display: block;
+    margin: 5px 0;
+    color: #b3def9;
+    }
+.container p{
+    color: #ffffff;
+}
+//頁尾
+footer{
+    background-color: #05192d;
+padding: 40px 0;
+}
+footer dl{
+    text-align: center;
+}
+footer a{
+    color: #ffffff;
+}
+footer dt{
+    color: #b3def9;
+    font-size: 20px;
+    font-weight: bold;
+}
