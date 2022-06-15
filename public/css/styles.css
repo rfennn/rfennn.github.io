@@ -14,7 +14,7 @@ ul, ol {
 }
 
 header {
-  background-color: #012447;
+  background-color: #05192d;
 }
 
 header h1 {
@@ -40,7 +40,39 @@ header > .container > nav > ul > li > a {
   width: 100%;
 }
 
+.img-radius {
+  border-radius: 8px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col-4 {
+  width: calc(100% / 3 - 30px);
+  margin: 0px 10px 40px 10px;
+}
+
+.col-3 {
+  width: calc(100% / 4 - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-6 {
+  width: calc(100% / 2 - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-6 img {
+  background-size: auto;
+}
+
+div > h2 {
+  margin: 20px 0;
+  color: #05192d;
 }
