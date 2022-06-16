@@ -46,9 +46,11 @@ letter-spacing: 2px;
 font-weight: bold;
 box-sizing: border-box;
 display: block;
-}
-header>.container>nav>ul>li:hover{
 border-bottom: 3px solid $primary-color;
+}
+header>.container>nav>ul>li>a:hover{
+border-bottom: 3px solid bisque;
+color: bisque;
 
 }
 //內容
@@ -56,6 +58,7 @@ border-bottom: 3px solid $primary-color;
 .img-fluid{
     width: 100%;
 }
+
 .img-radius{
     border-radius: 8px;
 }
@@ -117,7 +120,7 @@ footer dt{
 }
 // design-list
 .breadcrumb{
-padding-top: 10px;
+padding-top: 20px;
 padding-bottom: 10px;
 color: #ffffff;
 }
@@ -126,7 +129,7 @@ color: #ffffff;
 color: rgb(255, 255, 255);
 }
 section ul{
-    margin-top: 30px;
+    margin-top: 50px;
     width: 100%;
 }
 section li{

@@ -50,10 +50,12 @@ header > .container > nav > ul > li > a {
   font-weight: bold;
   box-sizing: border-box;
   display: block;
+  border-bottom: 3px solid #b3def9;
 }
 
-header > .container > nav > ul > li:hover {
-  border-bottom: 3px solid #b3def9;
+header > .container > nav > ul > li > a:hover {
+  border-bottom: 3px solid bisque;
+  color: bisque;
 }
 
 .img-fluid {
@@ -132,7 +134,7 @@ footer dt {
 }
 
 .breadcrumb {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   color: #ffffff;
 }
@@ -142,7 +144,7 @@ footer dt {
 }
 
 section ul {
-  margin-top: 30px;
+  margin-top: 50px;
   width: 100%;
 }
 
