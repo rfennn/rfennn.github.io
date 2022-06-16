@@ -75,17 +75,17 @@ header > .container > nav > ul > li:hover {
 
 .col-4 {
   width: calc(100% / 3 - 40px);
-  margin: 0px 70px 40px 50px;
+  margin: 0 15px 40px 15px;
 }
 
 .col-3 {
   width: calc(100% / 4 - 30px);
-  margin: 0px 10px 40px 10px;
+  margin: 0px 15px 40px 15px;
 }
 
 .col-9 {
-  width: calc(100% / 1.33333 - 30px);
-  margin: 0px 10px 40px 10px;
+  width: calc(100% / 1.333333333 - 30px);
+  margin: 0px 15px 40px 15px;
 }
 
 .col-6 {
@@ -137,22 +137,22 @@ footer dt {
   color: #ffffff;
 }
 
-.breadcrumb > a {
+.breadcrumb a {
   color: white;
 }
 
 section ul {
   margin-top: 30px;
+  width: 100%;
 }
 
 section li {
   background-color: #b3def9;
   border-radius: 5px;
-  box-sizing: border-box;
-  width: 180px;
   text-align: center;
   padding: 8px 0;
   margin: 8px auto;
+  width: 100%;
 }
 
 section > ul > li > a {
@@ -161,10 +161,12 @@ section > ul > li > a {
   width: 100%;
 }
 
-.left {
-  width: 20%;
+.col-4 h3 {
+  text-align: center;
+  color: #b3def9;
 }
 
-.right {
-  width: 80%;
+.col-4 p {
+  color: #ffffff;
+  text-align: center;
 }
