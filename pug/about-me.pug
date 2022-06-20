@@ -24,43 +24,22 @@ html(lang='en')
             li
               a(href='#') 履歷表
     // 頁首結尾
-    img.img-fluid(src='public/images/sea.jpeg', alt='')
-    // 內容開始
-    // .container>h1{專案作品}+.row>.col-md-4*6>img.img-fluid+p.title>a[href="#"](標題$)^+p.desccription{內容}
-    .container
-      h2.text-center &#x5C08;&#x6848;&#x4F5C;&#x54C1;
+
+    .container 
+      .row 
+        .col-12
+          h1 關於我
       .row
-        .col-6.col-md-4.col-lg-3
+        .col-12.col-md-6 
           img.img-fluid.img-radius(src='https://loremflickr.com/300/300', alt='')
-          h3.title.text-center
-            a(href='#') &#x4F5C;&#x54C1;&#x4E00;
-          p.description.text-center &#x5167;&#x5BB9;
-        .col-6.col-md-4.col-lg-3
+        .col-12.col-md-6.order-md-1 02
+
+      .row 
+        .col-12.col-md-6 
           img.img-fluid.img-radius(src='https://loremflickr.com/300/300', alt='')
-          h3.title.text-center
-            a(href='#') &#x4F5C;&#x54C1;&#x4E8C;
-          p.description.text-center &#x5167;&#x5BB9;
-        .col-6.col-md-4.col-lg-3
-          img.img-fluid.img-radius(src='https://loremflickr.com/300/300', alt='')
-          h3.title.text-center
-            a(href='#') &#x4F5C;&#x54C1;&#x4E09;
-          p.description.text-center &#x5167;&#x5BB9;
-        .col-6.col-md-4.col-lg-3
-          img.img-fluid.img-radius(src='https://loremflickr.com/300/300', alt='')
-          h3.title.text-center
-            a(href='#') &#x4F5C;&#x54C1;&#x56DB;
-          p.description.text-center &#x5167;&#x5BB9;
-        .col-md-6
-          img.img-fluid.img-radius(src='public/images/sea.6-1.jpg', height='250px', alt='')
-          h3.title.text-center
-            a(href='#') &#x4F5C;&#x54C1;&#x4E94;
-          p.description.text-center &#x5167;&#x5BB9;&#x6587;&#x5B57;
-        .col-md-6
-          img.img-fluid.img-radius(src='public/images/sea.6-1.jpg', height='250px', alt='')
-          h3.title.text-center
-            a(href='#') &#x4F5C;&#x54C1;&#x516D;
-          p.description.text-center &#x5167;&#x5BB9;
-    // footer>.container>.row>dl.col-md-3*5>dt{標題$$}+dd*4>a{項目$$}^^^p.copyright.text-center{copyright}
+        .col-12.col-md-6 02
+
+
     footer
       .container
         .row
@@ -74,7 +53,7 @@ html(lang='en')
               a(href='#') &#x9805;&#x76EE;03
             dd
               a(href='#') &#x9805;&#x76EE;04
-          dl.col-md-3
+          dl.col-12.col-md-3
             dt &#x6A19;&#x984C;02
             dd
               a(href='#') &#x9805;&#x76EE;01
@@ -82,7 +61,7 @@ html(lang='en')
               a(href='#') &#x9805;&#x76EE;02
             dd
               a(href='#') &#x9805;&#x76EE;03
-          dl.col-md-3
+          dl.col-12.col-md-3
             dt &#x6A19;&#x984C;03
             dd
               a(href='#') &#x9805;&#x76EE;01
@@ -92,7 +71,7 @@ html(lang='en')
               a(href='#') &#x9805;&#x76EE;03
             dd
               a(href='#') &#x9805;&#x76EE;04
-          dl.col-md-3
+          dl.col-12.col-md-3
             dt &#x6A19;&#x984C;04
             dd
               a(href='#') &#x9805;&#x76EE;01
