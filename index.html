@@ -10,16 +10,23 @@
   <body>
     <!-- header>.container>h1{fennn}+nav>ul>li*4>a[href="#"]{文字}-->
     <header>
-      <div class="container"><a class="icon-menu" href="#">menu </a>
-        <h1> <a href="index.html">Fennn's portfolio</a></h1>
-        <nav>
-          <ul>
-            <li><a href="about-me.html">關於我</a></li>
-            <li><a href="design-list.html">專案作品</a></li>
-            <li><a href="#">聯絡我</a></li>
-            <li><a href="#">履歷表</a></li>
-          </ul>
-        </nav>
+      <div class="container">
+        <div class="row flex-space-between">
+          <h1> <a href="index.html">Fennn's portfolio</a></h1><a class="icon-menu" href="#">menu </a>
+          <nav>
+            <ul>
+              <li><a href="about-me.html">關於我</a></li>
+              <li><a href="#">專案作品</a>
+                <ul class="submenu"> 
+                  <li> <a href="design-list.html">平面設計</a></li>
+                  <li><a href="design-list.html">網頁設計</a></li>
+                </ul>
+              </li>
+              <li><a href="#">聯絡我</a></li>
+              <li><a href="#">履歷表</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- 頁首結尾--><img class="img-fluid" src="public/images/sea.jpeg" alt="">

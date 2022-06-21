@@ -37,17 +37,17 @@ header h1 a {
   color: #b3def9;
 }
 
-header > .container > nav > ul {
+header > .container nav > ul {
   display: flex;
   width: 100%;
 }
 
-header > .container > nav > ul > li {
+header > .container nav > ul > li {
   width: 25%;
   text-align: center;
 }
 
-header > .container > nav > ul > li > a {
+header > .container nav > ul > li > a {
   line-height: 60px;
   text-decoration: none;
   color: #b3def9;
@@ -59,7 +59,7 @@ header > .container > nav > ul > li > a {
   border-bottom: 3px solid #b3def9;
 }
 
-header > .container > nav > ul > li > a:hover {
+header > .container nav > ul > li > a:hover {
   border-bottom: 3px solid bisque;
   color: bisque;
 }
@@ -374,6 +374,10 @@ section > ul > li > a {
   text-align: center;
 }
 
+.flex-space-between {
+  justify-content: space-between;
+}
+
 @media (max-width: 767px) {
   h1 {
     float: left;
@@ -390,37 +394,53 @@ section > ul > li > a {
     width: 15%;
     display: block;
     text-align: center;
-    float: right;
   }
 
-  header > .container > nav {
+  header {
+    position: relative;
+  }
+
+  header > .container nav {
     width: 100%;
-    float: left;
-    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: #030e19;
   }
 
-  header > .container > nav.active {
+  header > .container nav.active {
     display: block;
   }
 
-  header > .container > nav > ul {
+  header > .container nav > ul {
     display: block;
   }
 
-  header > .container > nav > ul > li {
+  header > .container nav > ul > li {
     width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #b3def9;
   }
 
-  .overflow-hidden {
-    overflow: hidden;
-  }
-
-  header > .container > nav > ul > li > a {
+  header > .container nav > ul > li > a {
     border-bottom: none;
   }
 
-  header > .container > nav > ul > li > a:hover {
+  header > .container nav > ul > li > a:hover {
     border-bottom: none;
+  }
+
+  .submenu {
+    background-color: #b3def9;
+  }
+
+  .submenu > li {
+    line-height: 60px;
+    border-bottom: 1px solid black;
+  }
+
+  .submenu > li > a {
+    color: #030e19;
+    display: block;
   }
 
   /* 767px 以下*/

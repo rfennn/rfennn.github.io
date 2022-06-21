@@ -10,19 +10,25 @@ html(lang='en')
     // header>.container>h1{fennn}+nav>ul>li*4>a[href="#"]{文字}
     header
       .container
-        a.icon-menu(href="#") menu 
-        h1 
-            a(href='index.html') Fennn's portfolio
-        nav
-          ul
-            li
-              a(href='about-me.html') 關於我
-            li
-              a(href='design-list.html') 專案作品
-            li
-              a(href='#') 聯絡我
-            li
-              a(href='#') 履歷表
+        .row.flex-space-between
+            h1 
+                a(href='index.html') Fennn's portfolio
+            a.icon-menu(href="#") menu 
+            nav
+              ul
+                li
+                  a(href='about-me.html') 關於我
+                li
+                  a(href='#') 專案作品
+                  ul.submenu 
+                    li 
+                      a(href="design-list.html") 平面設計
+                    li
+                      a(href="design-list.html") 網頁設計
+                li
+                  a(href='#') 聯絡我
+                li
+                  a(href='#') 履歷表
     // 頁首結尾
     img.img-fluid(src='public/images/sea.jpeg', alt='')
     // 內容開始

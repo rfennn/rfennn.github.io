@@ -39,18 +39,18 @@ header h1 a{
     color: #b3def9;
 }
 
-header>.container>nav>ul {
+header>.container nav>ul {
     display: flex;
     width: 100%;
     // justify-content: space-around;
 }
 
-header>.container>nav>ul>li {
+header>.container nav>ul>li {
     width: 25%;
     text-align: center;
 }
 
-header>.container>nav>ul>li>a {
+header>.container nav>ul>li>a {
     line-height: 60px;
     text-decoration: none;
     color: $primary-color;
@@ -62,7 +62,7 @@ header>.container>nav>ul>li>a {
     border-bottom: 3px solid $primary-color;
 }
 
-header>.container>nav>ul>li>a:hover {
+header>.container nav>ul>li>a:hover {
     border-bottom: 3px solid bisque;
     color: bisque;
 
@@ -237,11 +237,14 @@ section>ul>li>a {
     background-color: rgb(12, 29, 29);
     text-align: center;
 }
-
+ .flex-space-between{
+    justify-content: space-between;
+}
+  
 // .icon-menu
 //小於767px以下
 @media (max-width: 767px) {
-    
+ 
 
     h1 {
         // width: 85%;
@@ -260,36 +263,59 @@ section>ul>li>a {
         width: 15%;
         display: block;
         text-align: center;
-        float: right;
+    }
+    header{
+        position: relative;
     }
 
-    header>.container>nav {
+    header>.container nav {
         width: 100%;
-        float: left;
-        display: none;
+        position: absolute;
+        top: 60px;
+        background-color: #030e19;
+        // display: none;
     }
-    header>.container>nav.active {
+    nav{
+        // left: -100vw;
+        // transition: all .3s;
+    }
+    .icon-menu:hover + nav{
+        // left: 0px;
+    }
+    header>.container nav.active {
         display: block;
     }
 
-    header>.container>nav>ul {
+    header>.container nav>ul {
         display: block;
     }
 
-    header>.container>nav>ul>li {
+    header>.container nav>ul>li {
         width: 100%;
+        text-align: center;
+        border-bottom: 1px solid $primary-color;
     }
 
-    .overflow-hidden {
-        overflow: hidden;
-    }
-    header>.container>nav>ul>li>a{
+
+    header>.container nav>ul>li>a{
         border-bottom: none;
     }
-    header>.container>nav>ul>li>a:hover{
+    header>.container nav>ul>li>a:hover{
         border-bottom: none;
     }
-/* 767px 以下*/
+    .submenu{
+        background-color: $primary-color;
+    }
+    .submenu>li{
+        line-height:60px ;
+        border-bottom: 1px solid black;
+    }
+    .submenu>li>a{
+        color: #030e19;
+        display: block;
+    } 
+
+    /* 767px 以下*/
 }
 
 
